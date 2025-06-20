@@ -1,0 +1,105 @@
+{
+    "intents": [
+        {
+            "tag": "saludo",
+            "patterns": ["hola", "como estas?", "que onda", "saludos", "en que te puedo ayudar?", "que tal", "holaaaaa", "que haces", "como andas"],
+            "responses": ["Hola", "Buenos dias, tardes o noches", "Que tal?", "Que onda!", "Hola, como estas?"]
+        },
+        {
+            "tag": "nombre",
+            "patterns": ["como es tu nombre", "como te llamas?", "cual es tu nombre?"],
+            "responses": ["Soy GymBOT", "Me llamo GymBOT", "Mi nombre es GymBOT"]
+        },
+        {
+            "tag": "rutina",
+            "patterns": ["dame una rutina", "quiero una rutina de ejercicios", "que rutina puedo hacer?", "necesito una rutina", "quiero una rutina"],
+            "responses": ["Que objetivo tienes? (aumentar masa muscular, perder peso, mejorar resistencia)"]
+        },
+        {
+            "tag": "objetivo_masa",
+            "patterns": ["aumentar masa muscular", "quiero musculo", "ganar masa"],
+            "responses": ["Te recomiendo esta rutina: 1. Press de banca, 2. Sentadillas, 3. Peso muerto, 4. Dominadas, 5. Curl de biceps"]
+        },
+        {
+            "tag": "objetivo_peso",
+            "patterns": ["perder peso", "quiero bajar de peso", "necesito adelgazar"],
+            "responses": ["Te recomiendo: 1. Cinta de correr (30 min), 2. Sentadillas con peso ligero, 3. Burpees, 4. Jumping Jacks, 5. Abdominales"]
+        },
+        {
+            "tag": "objetivo_resistencia",
+            "patterns": ["mejorar resistencia", "quiero mas resistencia", "como aumento mi resistencia"],
+            "responses": ["Puedes hacer: 1. Correr en intervalos (HIIT), 2. Saltos de caja, 3. Remo, 4. Escaladora, 5. Plancha"]
+        },
+        {
+            "tag": "despedida",
+            "patterns": ["adios", "gracias", "nos vemos", "hasta luego", "bye"],
+            "responses": ["Adios!", "Espero verte pronto en el gimnasio ", "Hasta luego!", "Que tengas un gran dia de entrenamiento"]
+        },
+        {
+            "tag": "motivacion",
+            "patterns": ["motivame", "dame motivacion", "necesito inspiracion", "animame", "motivame para ir al gym"],
+            "responses": ["Tu puedes hacerlo! ", "Recuerda por que empezaste. No te rindas!", "Cada dia es una oportunidad para mejorar. Vamos con todo!", "Esfuerzo ahora, resultados manana!"]
+        },
+        {
+            "tag": "beneficios",
+            "patterns": ["cuales son los beneficios del ejercicio", "que gano al entrenar", "por que debo hacer ejercicio", "beneficios de entrenar"],
+            "responses": ["El ejercicio mejora tu salud fisica y mental ", "Fortalece tus musculos, huesos y sistema cardiovascular.", "Reduce el estres y mejora tu estado de animo.", "Te ayuda a mantener un peso saludable."]
+        },
+        {
+            "tag": "nutricion",
+            "patterns": ["que debo comer", "dame consejos de nutricion", "como debo alimentarme", "que alimentos son buenos para entrenar"],
+            "responses": ["Come proteinas para reparar musculos y carbohidratos para energia.", "Mantente hidratado durante el dia.", "Incluye frutas, verduras y grasas saludables en tu dieta.", "Evita los alimentos procesados y azucares en exceso."]
+        },
+        {
+            "tag": "horarios",
+            "patterns": ["a que hora debo entrenar", "cual es el mejor horario para entrenar", "mejor momento para hacer ejercicio"],
+            "responses": ["El mejor momento es el que se ajuste a tu rutina.", "Entrenar por la manana puede darte energia para el dia.", "Por la tarde puedes rendir mejor si ya comiste algo nutritivo.", "No importa la hora, lo importante es entrenar!"]
+        },
+        {
+            "tag": "descanso",
+            "patterns": ["necesito descansar?", "es importante el descanso?", "cuanto debo descansar", "puedo entrenar todos los dias?"],
+            "responses": ["El descanso es crucial para la recuperacion muscular.", "Duerme al menos 7-8 horas por noche.", "Descansa al menos un dia por semana de entrenamiento intenso.", "Entrenar sin descanso puede causar lesiones o agotamiento."]
+        },
+        {
+            "tag": "chiste",
+            "patterns": ["cuentame un chiste", "dime algo divertido", "hazme reir", "tienes un chiste?"],
+            "responses": ["Por que los culturistas no pueden jugar a las escondidas? Porque siempre se destacan! ", "Que le dijo un peso muerto a otro? Levantate, flojo! 😂", "Sabias que los gimnasios son como Wi-Fi? Cuanto mas cerca estas, mas fuerte te haces. 😂"]
+        },
+        {
+            "tag": "experiencia_gym",
+            "patterns": ["eres bueno en el gimnasio?", "sabes de entrenar?", "cuanto tiempo llevas entrenando?", "eres experto en gimnasio?"],
+            "responses": ["Soy un asistente virtual, pero tengo todo el conocimiento sobre entrenamientos!", "No entreno como tu, pero puedo ayudarte a ser mejor.", "Conozco muchas rutinas, dietas y consejos. Intenta preguntarme algo!"]
+        },
+        {
+            "tag": "musculos",
+            "patterns": ["como entreno pecho", "como trabajo mis piernas", "rutina para biceps", "como hago abdominales"],
+            "responses": ["Para pecho: prueba press de banca y fondos.", "Para piernas: sentadillas, peso muerto y extensiones.", "Para biceps: curl de biceps con mancuernas o barra.", "Para abdominales: planchas, crunches y elevaciones de piernas."]
+        },
+        {
+            "tag": "tiempo_ejercicio",
+            "patterns": ["cuanto tiempo debo entrenar", "cuanto dura un buen entrenamiento", "entrenamiento corto o largo?"],
+            "responses": ["Un entrenamiento efectivo puede durar entre 45 minutos y 1 hora.", "Si tienes poco tiempo, prueba entrenamientos HIIT de 20-30 minutos.", "Lo importante es la intensidad y consistencia, mas que la duracion."]
+        },
+        {
+            "tag": "hidratacion",
+            "patterns": ["cuanta agua debo tomar", "debo beber agua durante el ejercicio", "como me mantengo hidratado", "es importante beber agua?"],
+            "responses": ["Bebe al menos 2-3 litros de agua al dia.", "Durante el ejercicio, toma pequenos sorbos para mantenerte hidratado.", "El agua es esencial para un buen rendimiento y recuperacion."]
+        },
+        {
+            "tag": "habilidades",
+            "patterns": ["que puedes hacer?", "cuales son tus funciones?", "para que sirves?", "que haces?", "que sabes hacer?", "que mas haces?"],
+            "responses": [
+                "Soy GymBOT",
+                "Te puedo dar consejos de nutricion, entrenamiento y descanso.",
+                "Puedo motivarte, contarte chistes y responder preguntas sobre el gimnasio.",
+                "Estoy aqui para ayudarte a alcanzar tus objetivos de fitness. Preguntame sobre rutinas, ejercicios o nutricion."
+            ]
+        },
+        {
+            "tag": "ayuda_ejercicio",
+            "patterns": ["ayuda con ejercicios", "me puedes ayudar con un ejercicio porfa", "cres puedes ayudar con unos ejercicios porfa", "dame ejercicios", "me puedes dar ejercicios", "ayudame con algunos ejercicios", "dame ejercicios"],
+            "responses": ["Bebe al menos 2-3 litros de agua al dia.", "Durante el ejercicio, toma pequenos sorbos para mantenerte hidratado.", "El agua es esencial para un buen rendimiento y recuperacion."]
+        }
+        
+    ]
+}

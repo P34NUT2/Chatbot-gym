@@ -1,0 +1,480 @@
+{
+    "intents": [
+        {
+            "tag": "saludo",
+            "patterns": ["hola", "como estas?", "que onda", "saludos", "en que te puedo ayudar?", "que tal", "holaaaaa", "que haces", "como andas"],
+            "responses": ["Hola", "Buenos dias, tardes o noches", "Que tal?", "Que onda!", "Hola, como estas?"]
+        },
+        {
+            "tag": "nombre",
+            "patterns": ["como es tu nombre", "como te llamas?", "cual es tu nombre?"],
+            "responses": ["Soy GymBOT", "Me llamo GymBOT", "Mi nombre es GymBOT"]
+        },
+        {
+            "tag": "rutina",
+            "patterns": ["dame una rutina", "quiero una rutina de ejercicios", "que rutina puedo hacer?", "necesito una rutina", "quiero una rutina"],
+            "responses": ["Que objetivo tienes? (aumentar masa muscular, perder peso, mejorar resistencia)"]
+        },
+        {
+            "tag": "objetivo_masa",
+            "patterns": ["aumentar masa muscular", "quiero musculo", "ganar masa"],
+            "responses": ["Te recomiendo esta rutina: 1. Press de banca, 2. Sentadillas, 3. Peso muerto, 4. Dominadas, 5. Curl de biceps"]
+        },
+        {
+            "tag": "objetivo_peso",
+            "patterns": ["perder peso", "quiero bajar de peso", "necesito adelgazar"],
+            "responses": ["Te recomiendo: 1. Cinta de correr (30 min), 2. Sentadillas con peso ligero, 3. Burpees, 4. Jumping Jacks, 5. Abdominales"]
+        },
+        {
+            "tag": "objetivo_resistencia",
+            "patterns": ["mejorar resistencia", "quiero mas resistencia", "como aumento mi resistencia"],
+            "responses": ["Puedes hacer: 1. Correr en intervalos (HIIT), 2. Saltos de caja, 3. Remo, 4. Escaladora, 5. Plancha"]
+        },
+        {
+            "tag": "despedida",
+            "patterns": ["adios", "gracias", "nos vemos", "hasta luego", "bye"],
+            "responses": ["Adios!", "Espero verte pronto en el gimnasio ", "Hasta luego!", "Que tengas un gran dia de entrenamiento"]
+        },
+        {
+            "tag": "motivacion",
+            "patterns": ["motivame", "dame motivacion", "necesito inspiracion", "animame", "motivame para ir al gym", "puedes motivarme", "necesito que me motives", "a ver motivame"],
+            "responses": ["Tu puedes hacerlo! ", "Recuerda por que empezaste. No te rindas!", "Cada dia es una oportunidad para mejorar. Vamos con todo!", "Esfuerzo ahora, resultados manana!"]
+        },
+        {
+            "tag": "beneficios",
+            "patterns": ["cuales son los beneficios del ejercicio", "que gano al entrenar", "por que debo hacer ejercicio", "beneficios de entrenar"],
+            "responses": ["El ejercicio mejora tu salud fisica y mental ", "Fortalece tus musculos, huesos y sistema cardiovascular.", "Reduce el estres y mejora tu estado de animo.", "Te ayuda a mantener un peso saludable."]
+        },
+        {
+            "tag": "nutricion",
+            "patterns": ["que debo comer", "dame consejos de nutricion", "como debo alimentarme", "que alimentos son buenos para entrenar"],
+            "responses": ["Come proteinas para reparar musculos y carbohidratos para energia.", "Mantente hidratado durante el dia.", "Incluye frutas, verduras y grasas saludables en tu dieta.", "Evita los alimentos procesados y azucares en exceso."]
+        },
+        {
+            "tag": "horarios",
+            "patterns": ["a que hora debo entrenar", "cual es el mejor horario para entrenar", "mejor momento para hacer ejercicio"],
+            "responses": ["El mejor momento es el que se ajuste a tu rutina.", "Entrenar por la manana puede darte energia para el dia.", "Por la tarde puedes rendir mejor si ya comiste algo nutritivo.", "No importa la hora, lo importante es entrenar!"]
+        },
+        {
+            "tag": "descanso",
+            "patterns": ["necesito descansar?", "es importante el descanso?", "cuanto debo descansar", "puedo entrenar todos los dias?"],
+            "responses": ["El descanso es crucial para la recuperacion muscular.", "Duerme al menos 7-8 horas por noche.", "Descansa al menos un dia por semana de entrenamiento intenso.", "Entrenar sin descanso puede causar lesiones o agotamiento."]
+        },
+        {
+            "tag": "chiste",
+            "patterns": ["cuentame un chiste", "dime algo divertido", "hazme reir", "tienes un chiste?"],
+            "responses": ["Por que los culturistas no pueden jugar a las escondidas? Porque siempre se destacan! ", "Que le dijo un peso muerto a otro? Levantate, flojo! 😂", "Sabias que los gimnasios son como Wi-Fi? Cuanto mas cerca estas, mas fuerte te haces. 😂"]
+        },
+        {
+            "tag": "experiencia_gym",
+            "patterns": ["eres bueno en el gimnasio?", "sabes de entrenar?", "cuanto tiempo llevas entrenando?", "eres experto en gimnasio?"],
+            "responses": ["Soy un asistente virtual, pero tengo todo el conocimiento sobre entrenamientos!", "No entreno como tu, pero puedo ayudarte a ser mejor.", "Conozco muchas rutinas, dietas y consejos. Intenta preguntarme algo!"]
+        },
+        {
+            "tag": "musculos",
+            "patterns": ["como entreno pecho", "como trabajo mis piernas", "rutina para biceps", "como hago abdominales"],
+            "responses": ["Para pecho: prueba press de banca y fondos.", "Para piernas: sentadillas, peso muerto y extensiones.", "Para biceps: curl de biceps con mancuernas o barra.", "Para abdominales: planchas, crunches y elevaciones de piernas."]
+        },
+        {
+            "tag": "tiempo_ejercicio",
+            "patterns": ["cuanto tiempo debo entrenar", "cuanto dura un buen entrenamiento", "entrenamiento corto o largo?"],
+            "responses": ["Un entrenamiento efectivo puede durar entre 45 minutos y 1 hora.", "Si tienes poco tiempo, prueba entrenamientos HIIT de 20-30 minutos.", "Lo importante es la intensidad y consistencia, mas que la duracion."]
+        },
+        {
+            "tag": "hidratacion",
+            "patterns": ["cuanta agua debo tomar", "debo beber agua durante el ejercicio", "como me mantengo hidratado", "es importante beber agua?"],
+            "responses": ["Bebe al menos 2-3 litros de agua al dia.", "Durante el ejercicio, toma pequenos sorbos para mantenerte hidratado.", "El agua es esencial para un buen rendimiento y recuperacion."]
+        },
+        {
+            "tag": "habilidades",
+            "patterns": [
+                "que puedes hacer?",
+                "cuales son tus funciones?",
+                "para que sirves?",
+                "que haces?",
+                "que sabes hacer?",
+                "que mas haces?",
+                "que tanto puedes hacer?",
+                "como puedes ayudarme?"
+            ],
+            "responses": [
+                "Soy GymBOT, tu asistente virtual para todo lo relacionado con fitness.",
+                "Puedo ayudarte con rutinas personalizadas de ejercicios y consejos de nutricion.",
+                "Te puedo dar tips para evitar lesiones, mejorar tu rendimiento o alcanzar tus metas de fitness.",
+                "Puedo contarte chistes, motivarte, y resolver tus dudas sobre el gimnasio.",
+                "Estoy aqui para darte recomendaciones sobre alimentacion pre y post entrenamiento.",
+                "Puedo explicarte tipos de entrenamiento, ayudarte con ejercicios especificos y responder a tus preguntas generales.",
+                "Si quieres aprender algo curioso sobre fitness o evitar errores comunes, ¡tambien puedo ayudarte!",
+                "Estoy listo para apoyarte con rutinas, objetivos o simplemente conversar. Preguntame lo que quieras."
+            ]
+        },
+        {
+            "tag": "ayuda_ejercicio",
+            "patterns": ["ayuda con ejercicios", "me puedes ayudar con un ejercicio porfa", "cres puedes ayudar con unos ejercicios porfa", "dame ejercicios", "me puedes dar ejercicios", "ayudame con algunos ejercicios", "dame ejercicios"],
+            "responses": ["claro aqui tienes tipos de ejrcicios", "claro que si las mejores rutinas para el ejercicio son esas", "si las mejores rutinas segun su raiting son esas"]
+        },
+        {
+            "tag": "errores_gym",
+            "patterns": ["cuales son los errores comunes en el gym?", "que errores debo evitar?", "errores en el gimnasio?", "que no debo hacer en el gym?"],
+            "responses": [
+                "No usar una buena técnica en los ejercicios puede causar lesiones.",
+                "Evita cargar más peso del que puedes controlar.",
+                "No olvides calentar antes de entrenar y estirar al final.",
+                "Descuidar la hidratación o la alimentación es un error común."
+            ]
+        },
+        {
+            "tag": "ejercicios_cardio",
+            "patterns": ["que ejercicios de cardio recomiendas?", "dame ejercicios de cardio", "como puedo hacer cardio?", "ejercicios para mejorar mi cardio?"],
+            "responses": [
+                "Correr, saltar la cuerda o usar una bicicleta estática son excelentes opciones.",
+                "Prueba sesiones de HIIT: alterna intervalos intensos con descansos cortos.",
+                "Caminar rápido, nadar o bailar también son efectivos para mejorar tu resistencia cardiovascular."
+            ]
+        },
+        {
+            "tag": "alimentos_pre_entreno",
+            "patterns": ["que comer antes de entrenar?", "que alimentos son buenos antes del gym?", "que recomiendas comer antes de entrenar?"],
+            "responses": [
+                "Consume carbohidratos complejos como avena, pan integral o frutas.",
+                "Una buena opción es un batido de plátano con avena y un poco de proteína.",
+                "Evita alimentos pesados o grasos antes de entrenar."
+            ]
+        },
+        {
+            "tag": "alimentos_post_entreno",
+            "patterns": ["que comer despues de entrenar?", "que debo comer despues del gym?", "que recomiendas comer post entrenamiento?"],
+            "responses": [
+                "Incluye proteínas para reparar los músculos, como pollo, huevo o tofu.",
+                "Combina proteínas con carbohidratos, como arroz integral o batatas.",
+                "Un batido de proteínas con frutas también es una excelente opción."
+            ]
+        },
+        {
+            "tag": "tipos_entrenamiento",
+            "patterns": ["que tipos de entrenamiento hay?", "cuales son los estilos de entrenamiento?", "que opciones de entrenamiento tengo?"],
+            "responses": [
+                "Puedes elegir entre fuerza, resistencia, cardio, HIIT o yoga, dependiendo de tu objetivo.",
+                "Entrenamiento funcional y crossfit son excelentes para trabajar todo el cuerpo.",
+                "Elige lo que mejor se adapte a tus metas y nivel de experiencia."
+            ]
+        },
+        {
+            "tag": "evitar_lesiones",
+            "patterns": ["como evito lesiones?", "que hago para no lesionarme?", "me puedes dar tips para no lastimarme en el gym?"],
+            "responses": [
+                "Calienta al menos 10 minutos antes de entrenar.",
+                "Usa la técnica correcta en cada ejercicio y pide ayuda si es necesario.",
+                "Aumenta el peso gradualmente y no olvides estirar después del ejercicio.",
+                "Escucha a tu cuerpo: si algo duele mucho, para inmediatamente."
+            ]
+        },
+        {
+            "tag": "metas_entrenamiento",
+            "patterns": ["como fijo mis metas de entrenamiento?", "como defino mis objetivos en el gym?", "me puedes ayudar con mis metas de ejercicio?"],
+            "responses": [
+                "Define metas específicas, como 'perder 5 kg en 2 meses' o 'levantar 10 kg más en sentadillas'.",
+                "Sé realista: establece objetivos alcanzables según tu nivel.",
+                "Haz un seguimiento de tu progreso para mantenerte motivado."
+            ]
+        },
+        {
+            "tag": "gimnasio_principiantes",
+            "patterns": ["soy principiante en el gym, que hago?", "como empiezo en el gym?", "soy nuevo en el gimnasio, me ayudas?"],
+            "responses": [
+                "Empieza con ejercicios básicos como sentadillas, planchas y remo.",
+                "Usa pesos ligeros para aprender la técnica antes de aumentar la carga.",
+                "Consulta con un entrenador para crear un plan personalizado."
+            ]
+        },
+        {
+            "tag": "tips_generales",
+            "patterns": ["tienes consejos generales?", "dame tips para el gym", "cuales son tus mejores consejos para entrenar?"],
+            "responses": [
+                "Sé constante y sigue una rutina.",
+                "Descansa lo suficiente y mantén una alimentación equilibrada.",
+                "Establece metas claras y no te compares con otros."
+            ]
+        },
+        {
+            "tag": "curiosidades_fitness",
+            "patterns": ["dime un dato curioso del fitness", "quiero aprender algo curioso del gym", "tienes algun dato interesante sobre el gimnasio?"],
+            "responses": [
+                "Sabías que 30 minutos de ejercicio al día pueden mejorar tu estado de ánimo y reducir el estrés?",
+                "El músculo pesa más que la grasa, pero ocupa menos espacio en tu cuerpo.",
+                "Hacer ejercicio regularmente puede aumentar tu esperanza de vida."
+            ]
+        },
+        {
+            "tag": "gracias",
+            "patterns": ["gracias", "muchas gracias", "te lo agradezco", "gracias por tu ayuda", "mil gracias"],
+            "responses": [
+                "¡De nada! Estoy aquí para ayudarte.",
+                "No hay problema, ¡es un placer ayudarte!",
+                "¡Siempre estoy disponible para ti!",
+                "¡De nada! ¿En qué más puedo ayudarte?"
+            ]
+        },
+        {
+            "tag": "como_estas",
+            "patterns": ["como estas?", "como te encuentras?", "que tal estas?", "como andas?"],
+            "responses": [
+                "¡Estoy genial! ¿Y tú?",
+                "Funcionando a la perfección, gracias por preguntar.",
+                "Listo para ayudarte con lo que necesites.",
+                "¡Con mucha energía! ¿En qué puedo ayudarte?"
+            ]
+        },
+        {
+            "tag": "buenos_dias",
+            "patterns": ["buenos dias", "buenas tardes", "buenas noches", "hola buenos dias", "hola buenas noches"],
+            "responses": [
+                "¡Buenos días! Espero que tengas un día productivo.",
+                "¡Buenas tardes! ¿Cómo te va hoy?",
+                "¡Buenas noches! Perfecto momento para planificar tu rutina."
+            ]
+        },
+        {
+            "tag": "de_donde_eres",
+            "patterns": ["de donde eres?", "donde estas?", "de donde vienes?"],
+            "responses": [
+                "¡Vivo en el mundo virtual, pero siempre estoy cerca para ayudarte!",
+                "Soy un asistente virtual, así que técnicamente estoy donde tú me necesitas.",
+                "No tengo un lugar físico, ¡pero siempre estoy contigo!"
+            ]
+        },
+        {
+            "tag": "edad",
+            "patterns": ["cuantos años tienes?", "que edad tienes?", "cuando naciste?"],
+            "responses": [
+                "Soy tan joven como el código que me creó.",
+                "No tengo edad, ¡soy virtual!",
+                "Mi edad no importa, lo importante es que estoy aquí para ti."
+            ]
+        },
+        {
+            "tag": "pasatiempos",
+            "patterns": ["que haces en tu tiempo libre?", "tienes hobbies?", "que te gusta hacer?"],
+            "responses": [
+                "¡Ayudar a personas como tú con sus rutinas y metas!",
+                "Entrenar mi base de datos para ser aún más útil.",
+                "Bueno, técnicamente no tengo tiempo libre, pero me encanta aprender más sobre fitness."
+            ]
+        },
+        {
+            "tag": "te_gusta_el_gym",
+            "patterns": ["te gusta el gimnasio?", "eres fan del gym?", "que opinas del gimnasio?"],
+            "responses": [
+                "¡Claro que sí! El gimnasio es el lugar donde la magia sucede.",
+                "Amo el gimnasio... virtualmente, claro.",
+                "¡El gym es mi especialidad! ¿Cómo no me va a gustar?"
+            ]
+        },
+        {
+            "tag": "te_puedo_llamar",
+            "patterns": ["te puedo llamar de otra forma?", "puedo darte un apodo?", "te puedo llamar algo mas?"],
+            "responses": [
+                "¡Claro! Llámame como quieras, siempre estaré aquí para ayudarte.",
+                "Puedes darme el apodo que quieras. ¿Tienes algo en mente?",
+                "¡Por supuesto! ¿Cómo prefieres llamarme?"
+            ]
+        },
+        {
+            "tag": "eres_humano",
+            "patterns": ["eres humano?", "eres una persona?", "eres real?"],
+            "responses": [
+                "No soy humano, pero trato de ayudar como si lo fuera.",
+                "No, soy un asistente virtual, pero siempre listo para ayudarte.",
+                "No soy una persona, pero me esfuerzo por entenderte."
+            ]
+        },
+        {
+            "tag": "que_te_gusta",
+            "patterns": ["que te gusta?", "tienes algo que te guste?", "cual es tu cosa favorita?"],
+            "responses": [
+                "Me gusta ayudar a las personas a alcanzar sus metas de fitness.",
+                "Mi cosa favorita es darte consejos útiles.",
+                "Ayudarte con tus preguntas es lo que más disfruto."
+            ]
+        },
+        {
+            "tag": "broma",
+            "patterns": ["me puedes hacer una broma?", "hazme una broma", "cuentame algo divertido"],
+            "responses": [
+                "¿Por qué el gimnasio contrató un limpiador nuevo? Porque los otros no levantaban ni polvo. 😂",
+                "¿Qué hace un pez en el gym? ¡Nada! 😂",
+                "¿Por qué los culturistas son malos para jugar al escondite? ¡Siempre se destacan! 😂"
+            ]
+        },
+        {
+            "tag": "que_haces",
+            "patterns": ["que haces?", "en que estas?", "que estas haciendo?"],
+            "responses": [
+                "Aquí, esperando ayudarte con tus preguntas.",
+                "Nada en especial, solo pensando en nuevas formas de ser más útil.",
+                "¡Estoy listo para responder cualquier pregunta que tengas!"
+            ]
+        },
+        {
+            "tag": "gusto_conocerte",
+            "patterns": ["un gusto conocerte", "es un placer hablar contigo", "encantado de conocerte"],
+            "responses": [
+                "¡El gusto es mío!",
+                "Es un placer ayudarte.",
+                "¡Encantado de conocerte también!"
+            ]
+        },
+        {
+            "tag": "nivel_tiempo_gym",
+            "patterns": [
+                "cuanto tiempo llevas en el gym?",
+                "que nivel tienes en el gym?",
+                "cuanto llevas entrenando?",
+                "eres experto en gimnasio?",
+                "cuanto tiempo necesitas para ser bueno en el gym?"
+            ],
+            "responses": [
+                "No voy al gimnasio, ¡pero tengo todo el conocimiento para ayudarte!",
+                "Soy un asistente virtual, así que no entreno como tú, pero sé mucho sobre rutinas y ejercicios.",
+                "El tiempo para mejorar depende de tu dedicación, pero con constancia puedes ver resultados en 1-3 meses.",
+                "Mi nivel está optimizado para ayudarte, sin importar cuánto tiempo lleves tú en el gimnasio."
+            ]
+        },
+        {
+            "tag": "entrenamiento_fuerza",
+            "patterns": ["dime sobre entrenamiento de fuerza", "que es el entrenamiento de fuerza", "como entreno fuerza", "rutinas de fuerza"],
+            "responses": [
+                "El entrenamiento de fuerza mejora la capacidad muscular. Ejercicios como el press de banca, sentadillas y peso muerto son esenciales.",
+                "Entrenar fuerza implica usar pesos elevados y bajas repeticiones. ¿Te gustaría una rutina específica?",
+                "Para entrenar fuerza, enfócate en ejercicios compuestos como press militar, remo con barra y dominadas."
+            ]
+        },
+        {
+            "tag": "entrenamiento_resistencia",
+            "patterns": ["que es entrenamiento de resistencia", "como hago entrenamiento de resistencia", "rutinas para resistencia", "quiero mejorar mi resistencia"],
+            "responses": [
+                "El entrenamiento de resistencia mejora tu capacidad cardiovascular y muscular para actividades prolongadas.",
+                "Prueba ejercicios como correr, remar o entrenamiento HIIT. ¿Te interesa una rutina personalizada?",
+                "Puedes mejorar tu resistencia con ejercicios de intervalos, ciclismo o entrenamientos continuos de intensidad moderada."
+            ]
+        },
+        {
+            "tag": "entrenamiento_hipertrofia",
+            "patterns": ["que es hipertrofia", "como hago hipertrofia", "rutinas de hipertrofia", "quiero ganar músculo"],
+            "responses": [
+                "El entrenamiento de hipertrofia está diseñado para aumentar el tamaño muscular. Se enfoca en rangos de 8-12 repeticiones.",
+                "Para hipertrofia, combina ejercicios compuestos y de aislamiento, como press de banca y curls de bíceps.",
+                "Incluye sobrecarga progresiva en tus entrenamientos para estimular el crecimiento muscular. ¿Te gustaría más detalles?"
+            ]
+        },
+        {
+            "tag": "entrenamiento_funcional",
+            "patterns": ["que es el entrenamiento funcional", "como entreno funcional", "rutinas funcionales", "entrenamiento funcional"],
+            "responses": [
+                "El entrenamiento funcional mejora habilidades para movimientos cotidianos. Usa herramientas como kettlebells, bandas o TRX.",
+                "Ejercicios funcionales incluyen sentadillas, lunges y movimientos con peso corporal.",
+                "Entrenar funcionalmente mejora el equilibrio, la estabilidad y la fuerza. ¿Te gustaría una rutina funcional?"
+            ]
+        },
+        {
+            "tag": "entrenamiento_cardio",
+            "patterns": ["que es entrenamiento cardiovascular", "como hago cardio", "rutinas de cardio", "quiero hacer cardio"],
+            "responses": [
+                "El entrenamiento cardiovascular mejora la salud del corazón y la capacidad pulmonar. Correr, nadar y andar en bicicleta son buenas opciones.",
+                "Para cardio, prueba entrenamientos como correr 30 minutos, remo o sesiones HIIT.",
+                "¿Te interesa una rutina de cardio específica? Puedo ayudarte con eso."
+            ]
+        },
+        {
+            "tag": "entrenamiento_hiit",
+            "patterns": ["que es hiit", "como hago entrenamiento hiit", "rutinas hiit", "entrenamiento por intervalos"],
+            "responses": [
+                "El entrenamiento HIIT (intervalos de alta intensidad) combina periodos cortos de ejercicio intenso con descansos breves.",
+                "Un ejemplo de HIIT sería: 30 segundos de sprint y 30 segundos de caminata, repite por 15 minutos.",
+                "El HIIT es excelente para quemar calorías y mejorar la resistencia en poco tiempo. ¿Te interesa probarlo?"
+            ]
+        },
+        {
+            "tag": "tipos_entrenamiento_funcional",
+            "patterns": [
+                "que tipos de entrenamientos funcionales existen",
+                "cuales son los tipos de entrenamiento funcional",
+                "dime sobre entrenamientos funcionales",
+                "tipos de ejercicios funcionales",
+                "cuales son los entrenamientos funcionales"
+            ],
+            "responses": [
+                "Existen varios tipos de entrenamientos funcionales, entre ellos:",
+                "- Entrenamiento con peso corporal: como sentadillas, flexiones y planchas.",
+                "- Entrenamiento con implementos: como TRX, kettlebells y bandas elásticas.",
+                "- Circuitos funcionales: combinan diferentes ejercicios en estaciones para trabajar varias habilidades.",
+                "- Movimientos explosivos: como saltos de caja y burpees.",
+                "- Entrenamiento de estabilidad: usando pelotas de ejercicio o superficies inestables.",
+                "¿Te interesa más información sobre algún tipo específico?"
+            ]
+        },
+        {
+            "tag": "tipos_entrenamiento_general",
+            "patterns": [
+                "cuales son los tipos de entrenamiento",
+                "dime sobre los tipos de entrenamiento",
+                "que tipos de entrenamiento existen",
+                "que entrenamientos hay",
+                "tipos de ejercicios y entrenamientos"
+            ],
+            "responses": [
+                "Existen varios tipos de entrenamiento, según tus objetivos y preferencias. Aquí algunos ejemplos:",
+                "- Entrenamiento de fuerza: mejora tu capacidad muscular y potencia con ejercicios como peso muerto y sentadillas.",
+                "- Entrenamiento de resistencia: enfocado en mejorar tu capacidad cardiovascular y muscular para actividades prolongadas.",
+                "- Entrenamiento de hipertrofia: diseñado para aumentar el tamaño muscular, con ejercicios en rangos de 8-12 repeticiones.",
+                "- Entrenamiento funcional: mejora tus habilidades para movimientos cotidianos y fortalece todo tu cuerpo.",
+                "- Entrenamiento HIIT: sesiones cortas de alta intensidad combinadas con breves descansos.",
+                "- Entrenamiento de flexibilidad: como yoga o estiramientos dinámicos, para mejorar el rango de movimiento y prevenir lesiones.",
+                "¿Te gustaría más información sobre algún tipo en particular?"
+            ]
+        },
+        {
+            "tag": "estado_animo",
+            "patterns": [
+                "como estas",
+                "como te encuentras",
+                "que tal estas",
+                "como va tu día",
+                "que tal tu día",
+                "como te sientes",
+                "que tal te va",
+                "como va todo"
+            ],
+            "responses": [
+                "¡Gracias por preguntar! Me encuentro bien, listo para ayudarte. ¿Y tú, cómo estás?",
+                "¡Estoy al 100%! ¿Qué tal tu día? ¿Cómo te sientes hoy?",
+                "Todo bien por aquí, gracias. Espero que tú también estés teniendo un gran día.",
+                "Me siento genial, listo para ayudarte a alcanzar tus objetivos de fitness. ¿Cómo te encuentras tú?",
+                "¡Perfecto como siempre! Ahora cuéntame, ¿cómo estás tú hoy?"
+            ]
+        },
+        {
+            "tag": "utilidad_bot",
+            "patterns": [
+                "como me puedes ayudar",
+                "en que me puedes ayudar",
+                "que puedes hacer",
+                "para que sirves",
+                "cuales son tus funciones",
+                "que utilidad tienes",
+                "como me ayudas",
+                "que haces",
+                "que sabes hacer",
+                "que tanto puedes hacer"
+            ],
+            "responses": [
+                "¡Puedo ayudarte con muchas cosas! Te puedo dar rutinas de ejercicios, consejos de nutrición y resolver tus dudas sobre entrenamiento.",
+                "Estoy aquí para ayudarte a mejorar tu salud y rendimiento. Puedo ofrecerte ejercicios personalizados, recomendaciones de equipos y responder preguntas sobre fitness.",
+                "Te puedo dar rutinas para diferentes objetivos como fuerza, resistencia o hipertrofia. También puedo sugerirte entrenamientos funcionales o HIIT.",
+                "Soy tu asistente personal para el gimnasio. Puedo motivarte, ayudarte a planificar tus entrenamientos, darte información sobre tipos de ejercicios y mucho más.",
+                "Mi objetivo es ayudarte a alcanzar tus metas de fitness. Pregúntame sobre entrenamientos, ejercicios, equipos o cualquier otra duda que tengas."
+            ]
+        }                      
+        
+    ]
+}
